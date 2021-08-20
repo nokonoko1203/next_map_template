@@ -1,0 +1,34 @@
+{
+  "name": "next_router_test",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "start": "next start",
+    "clean": "rm -rf .next out",
+    "export": "BUILD_OPTION=development next export",
+    "export:prod": "BUILD_OPTION=production next export",
+    "build": "yarn clean && next build && yarn export",
+    "build:prod": "yarn clean && next build && yarn export:prod",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "deck.gl": "^8.5.4",
+    "maplibre-gl": "^1.15.2",
+    "next": "11.1.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@danmarshall/deckgl-typings": "^4.9.3",
+    "@types/react": "17.0.19",
+    "autoprefixer": "^10.3.1",
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.0",
+    "postcss": "^8.3.6",
+    "prettier": "^2.3.2",
+    "tailwindcss": "^2.2.7",
+    "typescript": "4.3.5"
+  }
+}
